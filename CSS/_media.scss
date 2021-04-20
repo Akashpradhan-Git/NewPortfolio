@@ -65,10 +65,10 @@
     }
 
     .nav-links {
-      padding: 1rem 0;
+      // padding: 0rem 0;
       border-radius: 0px 10px 10px 0;
-      width: 70%;
-      height: 70vh;
+      width: 100%;
+      height: auto;
       background: #000a12;
       position: absolute;
       top: 11vh;
@@ -76,7 +76,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      z-index: 1;
+      z-index: 1000;
       // transform: translateX(-100%);
       clip-path: circle(100px at 10% -10%);
       -webkit-clip-path: circle(100px at -90% 0%);
@@ -84,9 +84,15 @@
       transition: all 0.8s ease-out;
 
       li {
-        padding: 1rem;
+        padding: 8%;
         a {
           color: white;
+          &:hover {
+            padding: 6px 12px;
+            background: white;
+            border-radius: 50px;
+            color: black;
+          }
         }
       }
     }

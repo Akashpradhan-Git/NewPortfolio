@@ -17,9 +17,10 @@ const nav = document.querySelector('.nav-links')
 const burger = document.querySelector('.burger')
 console.log(nav)
 const NavSlide = ()=>{
-    burger.addEventListener('click', ()=>{
+    burger.addEventListener('click', ()=>
+    {
         //console.log('click')
-        nav.classList.toggle('active-nav')
+         nav.classList.toggle('active-nav')
         burger.classList.toggle('cross')
     });
 }

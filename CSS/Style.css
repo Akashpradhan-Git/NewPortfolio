@@ -807,10 +807,9 @@ header a:hover {
     background: rgba(168, 164, 164, 0.295);
   }
   header .nav-links {
-    padding: 1rem 0;
     border-radius: 0px 10px 10px 0;
-    width: 70%;
-    height: 70vh;
+    width: 100%;
+    height: auto;
     background: #000a12;
     position: absolute;
     top: 11vh;
@@ -825,7 +824,7 @@ header a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    z-index: 1;
+    z-index: 1000;
     clip-path: circle(100px at 10% -10%);
     -webkit-clip-path: circle(100px at -90% 0%);
     pointer-events: none;
@@ -833,10 +832,16 @@ header a:hover {
     transition: all 0.8s ease-out;
   }
   header .nav-links li {
-    padding: 1rem;
+    padding: 8%;
   }
   header .nav-links li a {
     color: white;
+  }
+  header .nav-links li a:hover {
+    padding: 6px 12px;
+    background: white;
+    border-radius: 50px;
+    color: black;
   }
   header .active-nav {
     -webkit-transition: all 1s ease-in;
@@ -879,6 +884,64 @@ header a:hover {
   #contact .container .right .title {
     margin-top: 3rem;
   }
+}
+
+#galary {
+  margin-top: 3rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#03203cad), to(rgba(32, 102, 114, 0.404)));
+  background: linear-gradient(to top, #03203cad, rgba(32, 102, 114, 0.404));
+  padding: 1rem;
+}
+
+#galary h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+
+#galary .image {
+  top: 0;
+  z-index: 100;
+}
+
+#galary .image .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 6% 10%;
+}
+
+#galary .image .card-item {
+  border: 8px ridge rgba(53, 47, 47, 0.562);
+  margin: 1rem;
+  -webkit-box-shadow: 0px 10px 10px 3px rgba(97, 95, 95, 0.315);
+          box-shadow: 0px 10px 10px 3px rgba(97, 95, 95, 0.315);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#galary .image .card-item img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#galary .image .card-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 html {
