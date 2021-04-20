@@ -1,0 +1,138 @@
+@media (min-width: 900px) {
+  #about {
+    .container {
+      flex-direction: row;
+      margin: 0 2rem 0 5rem;
+      .left {
+        width: 500px;
+      }
+      .right {
+        align-items: flex-start;
+        margin-left: 10rem;
+
+        .text {
+          padding: 1rem 0rem;
+          width: 90%;
+        }
+      }
+    }
+  }
+  #skill {
+    .cards {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-item {
+      margin-top: 1rem;
+      padding: 1rem;
+    }
+    .fa-icon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #home {
+    .left {
+      margin: 4rem 0 0 5rem;
+    }
+    .right {
+      // background: red;
+      img {
+        display: none;
+      }
+    }
+  }
+  header {
+    .burger {
+      display: block;
+      position: relative;
+      // background: rgb(187, 176, 176);
+      border-radius: 50%;
+      padding: 0.7rem;
+      cursor: pointer;
+      transition: all 0.9s ease;
+      .line1,
+      .line3 {
+        transition: all 0.9s ease;
+      }
+      &:hover,
+      &:focus {
+        background: rgba(168, 164, 164, 0.295);
+      }
+    }
+
+    .nav-links {
+      padding: 1rem 0;
+      border-radius: 0px 10px 10px 0;
+      width: 70%;
+      height: 70vh;
+      background: #000a12;
+      position: absolute;
+      top: 11vh;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      // transform: translateX(-100%);
+      clip-path: circle(100px at 10% -10%);
+      -webkit-clip-path: circle(100px at -90% 0%);
+      pointer-events: none;
+      transition: all 0.8s ease-out;
+
+      li {
+        padding: 1rem;
+        a {
+          color: white;
+        }
+      }
+    }
+    .active-nav {
+      transition: all 1s ease-in;
+      // transform: translateX(0%);
+
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+
+      pointer-events: all;
+    }
+
+    .cross {
+      transition: all 0.9s ease;
+      .small {
+        visibility: hidden;
+      }
+      .line1 {
+        transition: all 0.9s ease;
+        transform: rotate(45deg) translate(2px, 5px);
+      }
+      .line3 {
+        transition: all 0.9s ease;
+        transform: rotate(-45deg) translate(2px, -6px);
+      }
+    }
+  }
+  #contact {
+    .container {
+      flex-direction: column;
+
+      .left {
+        width: 110%;
+        // input[type='text'],
+        // input[type='email'] {
+        //   width: 100%;
+        // }
+      }
+      .right {
+        margin-left: 10%;
+
+        .title {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}

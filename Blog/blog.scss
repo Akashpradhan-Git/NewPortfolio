@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(218, 34, 111);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(161, 30, 85, 0.932);
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+#blog {
+  .main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background: rgba(184, 187, 181, 0.404);
+    box-shadow: 3px 3px 10px -2px rgb(26, 24, 24);
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  .card-item {
+    box-shadow: 0px 3px 15px -6px gray;
+    margin: 1rem;
+    border-radius: 10px;
+    list-style: none;
+    transition: all ease 0.5s;
+    &:hover,
+    &:focus {
+      transform: scale(1.01);
+      box-shadow: 1px 10px 15px 2px rgba(128, 128, 128, 0.562);
+    }
+
+    .card {
+      display: flex;
+      padding: 0.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .img {
+    img {
+      width: 150px;
+      max-width: 250px;
+    }
+  }
+
+  a .text {
+    margin: 0 1rem;
+    width: 100%;
+
+    .title {
+      font-size: 1rem;
+      color: black;
+    }
+    .desc {
+      margin-top: 0.2rem;
+      font-size: 0.9rem;
+      color: rgb(97, 93, 93);
+      text-align: justify;
+      text-justify: inter-word;
+      width: 95%;
+      padding-right: 1rem;
+    }
+  }
+  .icon-social .wrapper {
+    background: rgba(225, 225, 228, 0.24);
+    border-radius: 5px;
+    width: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      font-size: 1rem;
+      color: black;
+      margin: 0.7rem 0;
+      cursor: pointer;
+      &:hover {
+        color: rgb(95, 95, 218);
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .contaner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

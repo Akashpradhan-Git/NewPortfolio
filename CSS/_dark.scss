@@ -1,0 +1,35 @@
+@mixin themeDark {
+  background: $black;
+  color: $white;
+  a {
+    color: $white;
+  }
+  #home .left .btn a {
+    color: $white;
+  }
+  .btn {
+    &:hover {
+      background-color: $black;
+    }
+  }
+  #home .left .btn.active {
+    &:hover {
+      background-color: $black;
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  #about .container .right .btn {
+    &:hover {
+      background-color: $black;
+      a {
+        color: $white;
+      }
+    }
+  }
+  header .burger div {
+    background: white;
+  }
+}
