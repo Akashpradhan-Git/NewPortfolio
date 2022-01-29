@@ -1029,6 +1029,11 @@ body {
 }
 
 /* Timeline */
+
+#tmln h1{
+  margin: 1rem 0;
+}
+
 .timeline {
   position: relative;
   padding: 0;
